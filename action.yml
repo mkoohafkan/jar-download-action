@@ -22,8 +22,8 @@ inputs:
     description: 'Additional repository to download from'
     required: false
     default: "https://repo1.maven.org/maven2/"
-  packaging:
-    description: 'packaging'
+  type:
+    description: 'type'
     required: false
     default: "jar"
 
@@ -37,4 +37,4 @@ runs:
     - --artifactId=${{ inputs.artifactId }}
     - --version=${{ inputs.version }}
     - --repository=${{ inputs.repository }}
-    - --packaging=${{ inputs.packaging }}
+    - --type=${{ inputs.type }}

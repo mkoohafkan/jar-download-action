@@ -19,8 +19,8 @@ while [ $# -gt 0 ]; do
     --version=*)
       version="${1#*=}"
       ;;
-    --packaging=*)
-      packaging="${1#*=}"
+    --type=*)
+      type="${1#*=}"
       ;;
     *)
       printf "***************************\n"
@@ -37,4 +37,4 @@ mvn -B -f /builder.pom.xml  dependency:copy-dependencies -s /usr/share/maven/ref
   -Dartifact.groupId=${groupId} \
   -Dartifact.artifactId=${artifactId} \
   -Dartifact.version=${version} \
-  -Dartifact.packaging=${packaging}
+  -Dartifact.type=${type}
