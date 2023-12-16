@@ -36,5 +36,5 @@ mvn -B -f /builder.pom.xml  dependency:copy-dependencies -s /usr/share/maven/ref
   -Dartifact.repository=${repository} \
   -Dartifact.groupId=${groupId} \
   -Dartifact.artifactId=${artifactId} \
-  -Dartifact.version=${version}
+  -Dartifact.version=${version} \
   -Dartifact.packaging=${packaging}
