@@ -22,6 +22,11 @@ inputs:
     description: 'Additional repository to download from'
     required: false
     default: "https://repo1.maven.org/maven2/"
+  packaging:
+    description: 'packaging'
+    required: false
+    default: "jar"
+
 
 runs:
   using: 'docker'
@@ -32,3 +37,4 @@ runs:
     - --artifactId=${{ inputs.artifactId }}
     - --version=${{ inputs.version }}
     - --repository=${{ inputs.repository }}
+    - --packaging=${{ inputs.packaging }}

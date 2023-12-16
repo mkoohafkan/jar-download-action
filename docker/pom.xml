@@ -20,6 +20,7 @@
             <groupId>${artifact.groupId}</groupId>
             <artifactId>${artifact.artifactId}</artifactId>
             <version>${artifact.version}</version>
+            <packaging>${artifact.packaging}</packaging>
         </dependency>
     </dependencies>
 
